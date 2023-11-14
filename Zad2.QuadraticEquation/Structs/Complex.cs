@@ -57,7 +57,31 @@ namespace Zad2_3.QuadraticEquation.Structs
 
         #endregion
 
-        #region Convertions
+        #region Implicit Conversions
+
+        public static implicit operator Complex(double number) => new Complex(number);
+
+        #endregion
+
+        #region Methods
+
+        public static Complex[] Sqrt(double number)
+        {
+            if (number >= 0)
+            {
+                Complex c1 = new Complex(Math.Sqrt(number));
+                Complex c2 = new Complex(-Math.Sqrt(number));
+                return new Complex[] { c1, c2 };
+            }
+            else
+            {
+                Complex c1 = new Complex(0, Math.Sqrt(-number));
+                Complex c2 = new Complex(0, -Math.Sqrt(-number));
+                return new Complex[] { c1, c2 };
+            }
+        }
+
+        #endregion
 
 
     }

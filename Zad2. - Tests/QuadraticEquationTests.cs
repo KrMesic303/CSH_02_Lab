@@ -1,5 +1,7 @@
+using System.Numerics;
 using Zad2.QuadraticEquation;
 using Zad2_3.QuadraticEquation.Structs;
+using Complex = Zad2_3.QuadraticEquation.Structs.Complex;
 
 namespace Zad2.__Test_Project
 {
@@ -37,7 +39,7 @@ namespace Zad2.__Test_Project
         public class ComplexTests
         {
             [TestMethod()]
-            public void ComplexOperations()
+            public void ComplexOperationsTest()
             {
                 //Set values
                 Complex first = new Complex(1, 2);
@@ -51,8 +53,20 @@ namespace Zad2.__Test_Project
                 Assert.AreEqual(new Complex(-5, -2), first * second, "Multiplication error");
                 Assert.AreEqual(new Complex(3, -1), fourth / first, "Division error");
 
-
             }
+
+            [TestMethod()]
+            public void SqrtTest()
+            {
+                //Set values
+                Complex[] expected1 = new Complex[] { new Complex(2), new Complex(-2) };
+                Complex[] expected2 = new Complex[] { new Complex(0, 2), new Complex(0, -2) };
+                //Test results
+
+                CollectionAssert.AreEqual(expected1, Complex.Sqrt(4), "Wrong roots of complex number");
+                CollectionAssert.AreEqual(expected2, Complex.Sqrt(-4), "Wrong roots of complex number");
+            }
+
         }
 
     }
