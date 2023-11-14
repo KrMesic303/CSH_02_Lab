@@ -92,7 +92,7 @@ namespace Zad2.QuadraticEquation
 
     public class NotRealRootsException : ArithmeticException
     {
-        public NotRealRootsException() : base("Can't get root of negative number21")
+        public NotRealRootsException() : base("Can't get root of negative number")
         {
 
         }
