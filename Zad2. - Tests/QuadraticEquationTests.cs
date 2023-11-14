@@ -67,6 +67,15 @@ namespace Zad2.__Test_Project
                 CollectionAssert.AreEqual(expected2, Complex.Sqrt(-4), "Wrong roots of complex number");
             }
 
+            [TestMethod()]
+            public void ToStringTest()
+            {
+                string message = "1 + 2i";
+                Complex compl = new Complex(1, 2);
+
+                Assert.AreEqual(message, compl.ToString(), "String outputs are not equal");
+            }
+
         }
 
     }

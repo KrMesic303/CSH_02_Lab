@@ -83,6 +83,9 @@ namespace Zad2_3.QuadraticEquation.Structs
 
         #endregion
 
-
+        public override string ToString()
+        {
+            return $"{Re} + {Im}i";
+        }
     }
 }
