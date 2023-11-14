@@ -1,4 +1,6 @@
-﻿namespace Zad2.QuadraticEquation
+﻿using Zad2_3.QuadraticEquation.Structs;
+
+namespace Zad2.QuadraticEquation
 {
     public class QuadraticEquation
     {
@@ -29,9 +31,19 @@
             get { return m_b * m_b - 4 * m_a * m_c; }
         }
 
-        public double[] Roots
+        //public double[] Roots
+        //{
+        //    get { return GetRoots(m_a, m_b, m_c); }
+        //}
+
+        public Complex[] Roots
         {
-            get { return GetRoots(m_a, m_b, m_c); }
+            get
+            {
+                Complex r1 = (-B + Complex.Sqrt(Discriminant)[0]) / (2 * A);
+                Complex r2 = (-B + Complex.Sqrt(Discriminant)[1]) / (2 * A);
+                return new Complex[] { r1, r2 };
+            }
         }
         #endregion
 

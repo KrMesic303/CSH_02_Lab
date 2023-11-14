@@ -9,30 +9,50 @@ namespace Zad2.__Test_Project
     public class QuadraticEquationTests
     {
         [TestMethod]
+        //public void Roots_Method_Test_old()
+        //{
+        //    //Set values
+        //    QuadraticEquation.QuadraticEquation first = new QuadraticEquation.QuadraticEquation(1, 2, -3);
+        //    QuadraticEquation.QuadraticEquation second = new QuadraticEquation.QuadraticEquation(-1, 2, -1);
+        //    double[] firstExpected = new double[2] { 1, -3 };
+        //    double[] secondExpected = new double[2] { 1, 1 };
+
+        //    //Get values
+        //    double[] rootsFirst = first.Roots;
+        //    double[] rootsSecond = second.Roots;
+
+        //    //Test results
+        //    CollectionAssert.AreEqual(firstExpected, rootsFirst, "Prvi korjeni su krivi");
+        //    CollectionAssert.AreEqual(secondExpected, rootsSecond, "Drugi korjeni su krivi");
+        //}
+
         public void Roots_Method_Test()
         {
             //Set values
             QuadraticEquation.QuadraticEquation first = new QuadraticEquation.QuadraticEquation(1, 2, -3);
             QuadraticEquation.QuadraticEquation second = new QuadraticEquation.QuadraticEquation(-1, 2, -1);
-            double[] firstExpected = new double[2] { 1, -3 };
-            double[] secondExpected = new double[2] { 1, 1 };
+            //double[] firstExpected = new double[2] { 1, -3 };
+            //double[] secondExpected = new double[2] { 1, 1 };
+
+            Complex[] firstExpected = new Complex[]{ new Complex(1), new Complex(-3) };
+            Complex[] secondExpected = new Complex[] { new Complex(1), new Complex(1) };
 
             //Get values
-            double[] rootsFirst = first.Roots;
-            double[] rootsSecond = second.Roots;
+            Complex[] rootsFirst = first.Roots;
+            Complex[] rootsSecond = second.Roots;
 
             //Test results
             CollectionAssert.AreEqual(firstExpected, rootsFirst, "Prvi korjeni su krivi");
             CollectionAssert.AreEqual(secondExpected, rootsSecond, "Drugi korjeni su krivi");
         }
 
-        [TestMethod()]
-        [ExpectedException(typeof(NotRealRootsException))]
-        public void NotRealRootExceptionTest()
-        {
-            QuadraticEquation.QuadraticEquation testament = new QuadraticEquation.QuadraticEquation(1, 0, 1);
-            double[] roots = testament.Roots;
-        }
+        //[TestMethod()]
+        //[ExpectedException(typeof(NotRealRootsException))]
+        //public void NotRealRootExceptionTest()
+        //{
+        //    QuadraticEquation.QuadraticEquation testament = new QuadraticEquation.QuadraticEquation(1, 0, 1);
+        //    Complex[] roots = testament.Roots;
+        //}
 
 
         [TestClass]
