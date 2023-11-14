@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zad2.QuadraticEquation\Zad2.QuadraticEquation.csproj" />
+    <ProjectReference Include="..\Zad2.QuadraticEquation\Zad2_3.QuadraticEquation.csproj" />
   </ItemGroup>
 
 </Project>

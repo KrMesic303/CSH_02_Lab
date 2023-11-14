@@ -5,9 +5,9 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad1.KompleksniBrojevi", "Zad1.KompleksniBrojevi\Zad1.KompleksniBrojevi.csproj", "{1780A958-EC3B-430E-B349-D7431DAD4133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad2.QuadraticEquation", "Zad2.QuadraticEquation\Zad2.QuadraticEquation.csproj", "{CB449F69-C9AE-4629-A4B8-3C3FC0F7E08B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad2_3.QuadraticEquation", "Zad2.QuadraticEquation\Zad2_3.QuadraticEquation.csproj", "{CB449F69-C9AE-4629-A4B8-3C3FC0F7E08B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad2. - Tests", "Zad2. - Tests\Zad2. - Tests.csproj", "{9A101D47-36C4-4B8A-B4D9-AC220C923827}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad2_3 - Tests", "Zad2. - Tests\Zad2_3 - Tests.csproj", "{9A101D47-36C4-4B8A-B4D9-AC220C923827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
